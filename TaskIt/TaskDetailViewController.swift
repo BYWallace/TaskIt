@@ -10,6 +10,7 @@ import UIKit
 
 class TaskDetailViewController: UIViewController {
     var detailTaskModel: TaskModel!
+    var mainVC: ViewController!
 
     @IBOutlet weak var taskTextField: UITextField!
     @IBOutlet weak var subtaskTextField: UITextField!
@@ -30,6 +31,13 @@ class TaskDetailViewController: UIViewController {
     }
     
     @IBAction func cancelButtonTapped(sender: UIBarButtonItem) {
+        self.navigationController?.popViewControllerAnimated(true)
+    }
+    @IBAction func doneButtonTapped(sender: UIBarButtonItem) {
+        var task = TaskModel(task: taskTextField.text, subtask: subtaskTextField.text, date: dueDatePicker.date)
+        
+        mainVC.taskArray[mainVC.tableView.indexPathForSelectedRow()!.row] = task
+        
         self.navigationController?.popViewControllerAnimated(true)
     }
 }

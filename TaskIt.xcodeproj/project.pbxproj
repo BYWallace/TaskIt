@@ -17,7 +17,8 @@
 		FE1BE5F51AB12613003AA81E /* TaskItTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1BE5F41AB12613003AA81E /* TaskItTests.swift */; };
 		FE1BE5FF1AB12F0F003AA81E /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1BE5FE1AB12F0F003AA81E /* TaskCell.swift */; };
 		FE5BF7361AC23DAA008FF004 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE5BF7351AC23DAA008FF004 /* CoreData.framework */; };
-		FE6C6D621AB1FB010040A5F0 /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6C6D611AB1FB010040A5F0 /* TaskModel.swift */; };
+		FE5BF7391AC240C2008FF004 /* TaskItModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FE5BF7371AC240C2008FF004 /* TaskItModel.xcdatamodeld */; };
+		FE5BF73B1AC241AB008FF004 /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5BF73A1AC241AB008FF004 /* TaskModel.swift */; };
 		FE881B441AB3BD3E003AFA0A /* TaskDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE881B431AB3BD3E003AFA0A /* TaskDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -46,7 +47,8 @@
 		FE1BE5F41AB12613003AA81E /* TaskItTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItTests.swift; sourceTree = "<group>"; };
 		FE1BE5FE1AB12F0F003AA81E /* TaskCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
 		FE5BF7351AC23DAA008FF004 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		FE6C6D611AB1FB010040A5F0 /* TaskModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
+		FE5BF7381AC240C2008FF004 /* TaskItModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TaskItModel.xcdatamodel; sourceTree = "<group>"; };
+		FE5BF73A1AC241AB008FF004 /* TaskModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
 		FE881B431AB3BD3E003AFA0A /* TaskDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,9 +96,10 @@
 				FE1BE5E01AB12613003AA81E /* ViewController.swift */,
 				FE881B431AB3BD3E003AFA0A /* TaskDetailViewController.swift */,
 				FE0FBD4B1ABA5B460006545C /* AddTaskViewController.swift */,
-				FE6C6D611AB1FB010040A5F0 /* TaskModel.swift */,
 				FE0FBD491ABA57850006545C /* Date.swift */,
 				FE1BE5FE1AB12F0F003AA81E /* TaskCell.swift */,
+				FE5BF7371AC240C2008FF004 /* TaskItModel.xcdatamodeld */,
+				FE5BF73A1AC241AB008FF004 /* TaskModel.swift */,
 				FE1BE5E21AB12613003AA81E /* Main.storyboard */,
 				FE1BE5E51AB12613003AA81E /* Images.xcassets */,
 				FE1BE5E71AB12613003AA81E /* LaunchScreen.xib */,
@@ -232,11 +235,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE1BE5E11AB12613003AA81E /* ViewController.swift in Sources */,
+				FE5BF7391AC240C2008FF004 /* TaskItModel.xcdatamodeld in Sources */,
 				FE0FBD4A1ABA57850006545C /* Date.swift in Sources */,
 				FE1BE5FF1AB12F0F003AA81E /* TaskCell.swift in Sources */,
-				FE6C6D621AB1FB010040A5F0 /* TaskModel.swift in Sources */,
 				FE1BE5DF1AB12613003AA81E /* AppDelegate.swift in Sources */,
 				FE881B441AB3BD3E003AFA0A /* TaskDetailViewController.swift in Sources */,
+				FE5BF73B1AC241AB008FF004 /* TaskModel.swift in Sources */,
 				FE0FBD4C1ABA5B460006545C /* AddTaskViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -443,6 +447,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FE5BF7371AC240C2008FF004 /* TaskItModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FE5BF7381AC240C2008FF004 /* TaskItModel.xcdatamodel */,
+			);
+			currentVersion = FE5BF7381AC240C2008FF004 /* TaskItModel.xcdatamodel */;
+			path = TaskItModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = FE1BE5D11AB12613003AA81E /* Project object */;
 }

@@ -33,7 +33,7 @@ class TaskDetailViewController: UIViewController {
         self.navigationController?.popViewControllerAnimated(true)
     }
     @IBAction func doneButtonTapped(sender: UIBarButtonItem) {
-        let appDelegate = (UIApplication.sharedApplication().delegate as AppDelegate)
+        let appDelegate = (UIApplication.sharedApplication().delegate as! AppDelegate)
         
         detailTaskModel.task = taskTextField.text
         detailTaskModel.subtask = subtaskTextField.text

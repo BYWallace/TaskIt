@@ -14,8 +14,6 @@ class SettingsViewController: UIViewController, UITableViewDataSource, UITableVi
     @IBOutlet weak var versionLabel: UILabel!
     
     let kVersionNumber = "1.0"
-    let kShouldCapitalizeTaskKey = "shouldCapitalizeTask"
-    let kShouldCompleteNewTodoKey = "completeNewTodo"
     
     override func viewDidLoad() {
         super.viewDidLoad()

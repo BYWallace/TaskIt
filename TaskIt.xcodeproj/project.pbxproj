@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		FE0FBD4A1ABA57850006545C /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0FBD491ABA57850006545C /* Date.swift */; };
 		FE0FBD4C1ABA5B460006545C /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0FBD4B1ABA5B460006545C /* AddTaskViewController.swift */; };
+		FE15AA7E1B52C84C00A45929 /* ModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE15AA7D1B52C84C00A45929 /* ModelManager.swift */; };
 		FE1BE5DF1AB12613003AA81E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1BE5DE1AB12613003AA81E /* AppDelegate.swift */; };
 		FE1BE5E11AB12613003AA81E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1BE5E01AB12613003AA81E /* ViewController.swift */; };
 		FE1BE5E41AB12613003AA81E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE1BE5E21AB12613003AA81E /* Main.storyboard */; };
@@ -36,6 +37,8 @@
 /* Begin PBXFileReference section */
 		FE0FBD491ABA57850006545C /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		FE0FBD4B1ABA5B460006545C /* AddTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
+		FE15AA7C1B52C74B00A45929 /* TaskIt.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TaskIt.entitlements; sourceTree = "<group>"; };
+		FE15AA7D1B52C84C00A45929 /* ModelManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelManager.swift; sourceTree = "<group>"; };
 		FE1BE5D91AB12613003AA81E /* TaskIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE1BE5DD1AB12613003AA81E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE1BE5DE1AB12613003AA81E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +97,7 @@
 		FE1BE5DB1AB12613003AA81E /* TaskIt */ = {
 			isa = PBXGroup;
 			children = (
+				FE15AA7C1B52C74B00A45929 /* TaskIt.entitlements */,
 				FE1BE5DE1AB12613003AA81E /* AppDelegate.swift */,
 				FE1BE5E01AB12613003AA81E /* ViewController.swift */,
 				FE881B431AB3BD3E003AFA0A /* TaskDetailViewController.swift */,
@@ -101,6 +105,7 @@
 				FE591E041B39F677003A9042 /* SettingsViewController.swift */,
 				FE0FBD491ABA57850006545C /* Date.swift */,
 				FE1BE5FE1AB12F0F003AA81E /* TaskCell.swift */,
+				FE15AA7D1B52C84C00A45929 /* ModelManager.swift */,
 				FE5BF7371AC240C2008FF004 /* TaskItModel.xcdatamodeld */,
 				FE5BF73A1AC241AB008FF004 /* TaskModel.swift */,
 				FE1BE5E21AB12613003AA81E /* Main.storyboard */,
@@ -186,6 +191,12 @@
 				TargetAttributes = {
 					FE1BE5D81AB12613003AA81E = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 5588544B43;
+						SystemCapabilities = {
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 					FE1BE5ED1AB12613003AA81E = {
 						CreatedOnToolsVersion = 6.2;
@@ -244,6 +255,7 @@
 				FE1BE5DF1AB12613003AA81E /* AppDelegate.swift in Sources */,
 				FE881B441AB3BD3E003AFA0A /* TaskDetailViewController.swift in Sources */,
 				FE5BF73B1AC241AB008FF004 /* TaskModel.swift in Sources */,
+				FE15AA7E1B52C84C00A45929 /* ModelManager.swift in Sources */,
 				FE0FBD4C1ABA5B460006545C /* AddTaskViewController.swift in Sources */,
 				FE591E051B39F677003A9042 /* SettingsViewController.swift in Sources */,
 			);
@@ -370,9 +382,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TaskIt/TaskIt.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TaskIt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -380,9 +396,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TaskIt/TaskIt.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TaskIt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
